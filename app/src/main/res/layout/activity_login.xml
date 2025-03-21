@@ -13,7 +13,7 @@
     </data>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="timatch_parent"
+        android:layout_height="match_parent"
         android:background="#F8EEEC">
 
         <RelativeLayout
@@ -36,7 +36,6 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_bold"
                     android:text="Welcome"
                     android:textColor="#E9662A"
                     android:textSize="28sp" />
@@ -44,7 +43,6 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_bold"
                     android:text="Back"
                     android:textColor="#E9662A"
                     android:textSize="28sp" />
@@ -66,8 +64,7 @@
                         android:id="@+id/userName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_medium"
-                        android:hint="User Name"
+                        android:text="super_admin"
                         android:inputType="textEmailAddress"
                         android:paddingStart="48dp"
                         android:textSize="20sp"
@@ -91,8 +88,7 @@
                         android:id="@+id/password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_medium"
-                        android:hint="Password"
+                        android:text="base@123"
                         android:inputType="textEmailAddress"
                         android:paddingStart="48dp"
                         android:textSize="20sp"
@@ -105,7 +101,9 @@
                     android:layout_height="45dp"
                     android:background="@drawable/btn_login"
                     android:layout_gravity="end"
-                    android:layout_marginBottom="8dp"/>
+                    android:layout_marginBottom="8dp"
+                    android:onClick="@{() -> a.onLoginClick()}" />
+
 
                 <LinearLayout
                     android:layout_width="match_parent"

@@ -10,13 +10,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
 import nix.food.android.R;
+import nix.food.android.data.model.api.response.category.FoodResponse;
 
 public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder> {
     private Context context;
-    private List<Food> foodList;
+    private List<FoodResponse> foodList;
 
-    public FoodAdapter(Context context, List<Food> foodList) {
+    public FoodAdapter(Context context, List<FoodResponse> foodList) {
         this.context = context;
         this.foodList = foodList;
     }
@@ -30,7 +33,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull FoodViewHolder holder, int position) {
-        Food food = foodList.get(position);
+        FoodResponse food = foodList.get(position);
         holder.foodName.setText(food.getName());
         holder.foodImage.setImageResource(food.getImageResId());
     }

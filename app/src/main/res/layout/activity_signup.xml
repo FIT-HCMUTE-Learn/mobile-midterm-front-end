@@ -37,7 +37,6 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_bold"
                     android:text="Create"
                     android:textColor="#305886"
                     android:textSize="28sp" />
@@ -45,7 +44,6 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_bold"
                     android:text="Account"
                     android:textColor="#305886"
                     android:textSize="28sp" />
@@ -66,7 +64,6 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_medium"
                         android:hint="Name"
                         android:paddingStart="48dp"
                         android:textSize="20sp"
@@ -88,7 +85,6 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_medium"
                         android:hint="Email"
                         android:inputType="textEmailAddress"
                         android:paddingStart="48dp"
@@ -112,7 +108,6 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_medium"
                         android:hint="Password"
                         android:inputType="textPassword"
                         android:paddingStart="48dp"
