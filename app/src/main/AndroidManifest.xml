@@ -58,6 +58,11 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.main.login.LoginActivity"/>
+        <activity android:name=".ui.main.login.SignUpActivity"/>
+        <activity android:name=".ui.main.login.IntroActivity"/>
+        <activity android:name=".ui.main.login.VerifyOtpActivity"/>
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
