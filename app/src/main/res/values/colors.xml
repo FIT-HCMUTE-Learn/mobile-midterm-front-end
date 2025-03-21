@@ -12,4 +12,10 @@
     <color name="primary_color">#0D72FF</color>
     <color name="secondary_color">#ffffff</color>
     <color name="tertiary_color">#F5F5F5</color>
+    <color name="name_user">#FF6658</color>
+    <color name="search">#ECECEC</color>
+    <color name="fabShop">#FF4B3A</color>
+    <color name="lavender">#8692f7</color>
+    <color name="banner">#FFC5AB</color>
+    <color name="btn_order">#FF5E00</color>
 </resources>
