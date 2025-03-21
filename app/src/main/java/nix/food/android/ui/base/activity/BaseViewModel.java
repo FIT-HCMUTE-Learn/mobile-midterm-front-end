@@ -13,6 +13,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 public class BaseViewModel extends ViewModel {
+
+    @Getter
+    @Setter
     protected CompositeDisposable compositeDisposable;
     protected final ObservableBoolean mIsLoading = new ObservableBoolean();
     protected final MutableLiveData<String> progressBarMsg = new MutableLiveData<>();
@@ -24,6 +27,7 @@ public class BaseViewModel extends ViewModel {
     @Setter
     protected String deviceId;
 
+    @Getter
     protected final Repository repository;
     @Getter
     protected final MVVMApplication application;
