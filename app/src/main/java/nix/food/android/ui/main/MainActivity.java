@@ -1,5 +1,5 @@
 package nix.food.android.ui.main;
-
+// TRANG KIM LOI - 22110371
 import static android.provider.Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION;
 
 import android.content.Intent;

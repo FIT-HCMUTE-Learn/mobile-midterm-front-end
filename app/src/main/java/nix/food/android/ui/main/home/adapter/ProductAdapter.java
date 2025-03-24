@@ -1,5 +1,5 @@
 package nix.food.android.ui.main.home.adapter;
-
+//TRANG KIM LOI - 22110371 - Le Tan Tru - 22110447
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;

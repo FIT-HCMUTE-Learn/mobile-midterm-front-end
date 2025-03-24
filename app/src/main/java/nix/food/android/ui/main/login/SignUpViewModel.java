@@ -12,6 +12,7 @@ import nix.food.android.data.model.api.request.login.SignUpRequest;
 import nix.food.android.ui.base.activity.BaseViewModel;
 import nix.food.android.ui.main.MainCalback;
 import timber.log.Timber;
+// TRANG KIM LOI - 22110371 - Le Tan Tru - 22110447
 
 public class SignUpViewModel extends BaseViewModel {
     public SignUpViewModel(Repository repository, MVVMApplication application) {

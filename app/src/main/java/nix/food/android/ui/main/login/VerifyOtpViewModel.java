@@ -9,7 +9,7 @@ import nix.food.android.data.model.api.request.login.VerifyOtpRequest;
 import nix.food.android.ui.base.activity.BaseViewModel;
 import nix.food.android.ui.main.MainCalback;
 import timber.log.Timber;
-
+// TRANG KIM LOI - 22110371 - Le Tan Tru - 22110447
 public class VerifyOtpViewModel extends BaseViewModel {
     public VerifyOtpViewModel(Repository repository, MVVMApplication application) {
         super(repository, application);

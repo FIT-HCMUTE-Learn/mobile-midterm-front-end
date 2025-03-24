@@ -1,5 +1,5 @@
 package nix.food.android.ui.main.login;
-
+// Le Nhut Anh - 22110279
 import java.util.List;
 
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
@@ -15,45 +15,5 @@ import timber.log.Timber;
 public class IntroViewModel extends BaseViewModel {
     public IntroViewModel(Repository repository, MVVMApplication application) {
         super(repository, application);
-    }
-    public void getAllCategories(MainCalback<List<CategoryResponse>> callback) {
-        compositeDisposable.add(repository.getApiService().getAllCategories()
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(
-                        response -> {
-                            if (response != null && response.getData() != null) {
-                                callback.doSuccess(response.getData().getContent());
-                            } else {
-                                hideLoading();
-                                callback.doFail();
-                            }
-                        },
-                        throwable -> {
-                            Timber.e(throwable);
-                            callback.doError(throwable);
-                        }
-                )
-        );
-    }
-    public void getAllProducts(MainCalback<List<ProductResponse>> callback) {
-        compositeDisposable.add(repository.getApiService().getAllProducts()
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(
-                        response -> {
-                            if (response != null && response.getData() != null) {
-                                callback.doSuccess(response.getData().getContent());
-                            } else {
-                                hideLoading();
-                                callback.doFail();
-                            }
-                        },
-                        throwable -> {
-                            Timber.e(throwable);
-                            callback.doError(throwable);
-                        }
-                )
-        );
     }
 }

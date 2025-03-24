@@ -1,5 +1,5 @@
 package nix.food.android.ui.main.login;
-
+//Ngyuen Thi Hong Nhung - 22110391 - Le Nhut Anh - 22110279
 import android.content.Intent;
 import android.os.Bundle;
 

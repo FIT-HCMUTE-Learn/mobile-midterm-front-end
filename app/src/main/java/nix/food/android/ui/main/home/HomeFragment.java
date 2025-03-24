@@ -1,5 +1,5 @@
 package nix.food.android.ui.main.home;
-
+// TRANG KIM LOI - 22110371
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
