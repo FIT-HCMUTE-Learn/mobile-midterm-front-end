@@ -154,7 +154,8 @@
             android:text="Verify"
             android:background="#ff3c05"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF"
+            android:onClick="@{v -> a.onVerifyClick()}"/>
 
         <LinearLayout
             android:layout_gravity="center"

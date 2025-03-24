@@ -5,14 +5,19 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 
+import java.util.List;
 import java.util.Objects;
 
 import eu.davidea.flexibleadapter.databinding.BR;
 import nix.food.android.R;
+import nix.food.android.data.model.api.response.category.CategoryResponse;
+import nix.food.android.data.model.api.response.category.ProductResponse;
 import nix.food.android.databinding.ActivityIntroBinding;
 import nix.food.android.di.component.ActivityComponent;
 import nix.food.android.ui.base.activity.BaseActivity;
 import nix.food.android.ui.main.MainActivity;
+import nix.food.android.ui.main.MainCalback;
+import nix.food.android.ui.main.home.HomeFragment;
 
 public class IntroActivity extends BaseActivity<ActivityIntroBinding, IntroViewModel> {
     @Override
@@ -21,8 +26,14 @@ public class IntroActivity extends BaseActivity<ActivityIntroBinding, IntroViewM
         viewBinding.setA(this);
         viewBinding.setVm(viewModel);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
     public void onStartClick() {
         if(!Objects.equals(viewModel.getRepository().getSharedPreferences().getToken(), "null")) {
+            viewModel.showLoading();
             Intent it = new Intent(this, MainActivity.class);
             startActivity(it);
         } else {
