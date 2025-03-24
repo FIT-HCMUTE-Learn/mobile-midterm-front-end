@@ -14,7 +14,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField "String", "BASE_URL", "\"https://192.168.0.106:8443/\""
+        buildConfigField "String", "BASE_URL", "\"https://196.169.7.212:8443/\""
         buildConfigField "String", "UPDATE_URL", "\"https://update.digibes.de/qrlive/qrcode_random.txt\""
         javaCompileOptions {
             annotationProcessorOptions {

@@ -29,8 +29,8 @@ public class SignUpActivity extends BaseActivity<ActivitySignupBinding, SignUpVi
     }
     public void signUp() {
         SignUpRequest request = new SignUpRequest();
-        request.setEmail(viewBinding.email.toString());
-        request.setPassword(viewBinding.password.toString());
+        request.setEmail(viewBinding.email.getText().toString());
+        request.setPassword(viewBinding.password.getText().toString());
         viewModel.SignUp(new MainCalback<List<String>>() {
             @Override
             public void doError(Throwable error) {
@@ -53,10 +53,10 @@ public class SignUpActivity extends BaseActivity<ActivitySignupBinding, SignUpVi
         }, request);
     }
     public void navigateVerify(String email) {
-        this.finish();
         VerifyOtpActivity.EMAIL = email;
         Intent it = new Intent(this, VerifyOtpActivity.class);
         startActivity(it);
+        this.finish();
     }
     @Override
     public int getLayoutId() {

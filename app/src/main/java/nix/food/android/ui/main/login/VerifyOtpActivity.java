@@ -30,8 +30,8 @@ public class VerifyOtpActivity extends BaseActivity<ActivityVerifyOtpBinding, Ve
     public void verifyOtp() {
         VerifyOtpRequest request = new VerifyOtpRequest();
         request.setEmail(viewBinding.email.toString());
-        request.setOtp(viewBinding.otpET1.toString() + viewBinding.otpET2.toString() + viewBinding.otpET3.toString() +
-                viewBinding.otpET4.toString() + viewBinding.otpET5.toString() + viewBinding.otpET6.toString());
+        request.setOtp(viewBinding.otpET1.getText().toString() + viewBinding.otpET2.getText().toString() + viewBinding.otpET3.getText().toString() +
+                viewBinding.otpET4.getText().toString() + viewBinding.otpET5.getText().toString() + viewBinding.otpET6.getText().toString());
         viewModel.VerifyOtp(new MainCalback<String>() {
             @Override
             public void doError(Throwable error) {
